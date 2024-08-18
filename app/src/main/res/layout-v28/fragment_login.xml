@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    This Fragment is used to login users of students and admins
+     -->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/llyLoginMenu"
+        tools:context=".LoginFragment">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/txtLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:elevation="6dp"
+                android:padding="20dp"
+                android:text="@string/login_menu"
+                android:textFontWeight="20"
+                android:textSize="20sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvLoginEmail"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="15dp"
+            android:elevation="6dp"
+            android:clickable="true"
+            app:cardCornerRadius="20dp"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/imgEmail"
+                android:layout_width="63dp"
+                android:layout_height="53dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginStart="12dp"
+                android:contentDescription="@string/email_image"
+                android:src="@drawable/baseline_email_24" />
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="266dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:autofillHints=""
+                android:background="@color/white"
+                android:ems="10"
+                android:hint="@string/your_email"
+                android:inputType="textEmailAddress"
+                android:padding="20dp"
+                android:layout_marginStart="70dp"
+                android:text=""
+                android:textColorHint="#757575"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvLoginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:elevation="6dp"
+            android:clickable="true"
+            app:cardCornerRadius="20dp"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/imgPassword"
+                android:layout_width="49dp"
+                android:layout_height="53dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="7dp"
+                android:contentDescription="@string/password_image"
+                android:src="@drawable/baseline_lock_24" />
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="266dp"
+                android:layout_marginEnd="10dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:autofillHints=""
+                android:background="@color/white"
+                android:ems="10"
+                android:hint="@string/your_password"
+                android:inputType="textPassword"
+                android:padding="20dp"
+                android:layout_marginStart="70dp"
+                android:text=""
+                android:textColorHint="#757575" />
+
+        </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="#2196F3"
+        android:elevation="6dp"
+        android:text="@string/sign_in"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnCreateAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="#2196F3"
+        android:elevation="6dp"
+        android:text="@string/create_a_new_account"
+        android:textColor="@color/white" />
+
+    </LinearLayout>
+

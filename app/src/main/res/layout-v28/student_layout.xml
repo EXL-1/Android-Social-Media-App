@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Student Layout is used for the Student Recycler View
+     -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_alignParentEnd="true"
+    android:id="@+id/llyStudentLayout"
+    android:layout_alignParentStart="true">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewStudent"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_marginStart="12.5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="12.5dp"
+        android:layout_marginBottom="5dp"
+        android:elevation="6dp"
+        android:clickable="true"
+        app:cardCornerRadius="20dp"
+        android:focusable="true">
+
+        <ImageView
+            android:id="@+id/imgStudent"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/baseline_person_24"
+            android:contentDescription="@string/student_image" />
+
+        <TextView
+            android:id="@+id/txtStudentName"
+            android:layout_width="213dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="start"
+            android:padding="21dp"
+            android:text="@string/student_email"
+            android:textFontWeight="20"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/btnStudentDelete"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/delete_student"
+            android:padding="2dp"
+            app:srcCompat="@drawable/baseline_delete_24" />
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

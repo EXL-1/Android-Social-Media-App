@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    This Fragment Displays all the students
+    , Contains a Students Recycler View
+     -->
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/llyStudents"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".student.StudentsFragment">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CVStudents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/txtStudents"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:elevation="6dp"
+                    android:padding="20dp"
+                    android:text="@string/students"
+                    android:textFontWeight="20"
+                    android:textSize="20sp" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcStudents"
+                android:layout_width="match_parent"
+                android:layout_height="374dp"
+                android:padding="16dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnAddStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:contentDescription="@string/add_a_student"
+        android:focusable="true"
+        android:padding="20dp"
+        app:backgroundTint="#2196F3"
+        app:srcCompat="@drawable/baseline_person_add_24"
+        app:tint="@color/black"
+        tools:ignore="ImageContrastCheck" />
+
+        </LinearLayout>
+        
